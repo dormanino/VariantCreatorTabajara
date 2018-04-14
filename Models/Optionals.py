@@ -1,6 +1,3 @@
-from Models import Optional
-
-
 class Optionals:
 
     def __init__(self, optionals):

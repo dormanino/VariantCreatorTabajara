@@ -1,6 +1,3 @@
-from Models import Code
-
-
 class Baumuster:
 
     def __init__(self, baumuster_id, codes):

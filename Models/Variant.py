@@ -1,9 +1,6 @@
-from Models import Code
-
-
 class Variant:
 
-    def __init__(self, variant_id: str, codes: [Code]):
+    def __init__(self, variant_id, codes):
         self.id = variant_id
         self.codes = codes
 

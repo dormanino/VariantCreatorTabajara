@@ -28,24 +28,20 @@ class DataProvider:
         codes = []
         for code_data in data:
             code_id = code_data['id']
-            optionals = self.optionals.find(code_id)
-            code = Code(code_id, optionals, code_data['isbasic'], code_data['rule'])
+            optional = self.optionals.find(code_id)
+            code = Code(code_id, optional, code_data['isbasic'], code_data['rule'])
             codes.append(code)
-
         return Baumuster(baumuster_id, codes)
 
     # FIXME: Remove this in favor of self-analysis in Baumuster - THIS IS JUST A SAMPLE!!!!!
     @staticmethod
-    def load_sample_variant(baumuster: Baumuster) -> Variant:
+    def load_sample_basic_variant():
         data = json.load(open(DataPoint.data_basic_variant))
         optionals = DataProvider.load_optionals()
-        codes: [Variant] = []
+        codes = []
         for code_data in data:
             code_id = code_data['id']
             optional = optionals.find(code_id)
-            if optional is not None:
-                optional = optional.rectified_for_baumuster(baumuster)
             code = Code(code_id, optional, code_data['isbasic'], code_data['rule'])
             codes.append(code)
-
         return Variant("Basic", codes)

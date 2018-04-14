@@ -1,6 +1,7 @@
 import json
 import time
 from Data.DataProvider import DataProvider
+from Helper.Utils import Utils
 from Parser.VariantGenerator import VariantGenerator
 
 # timer
@@ -11,10 +12,13 @@ data_provider = DataProvider()
 baumuster = data_provider.load_baumuster('C958174')
 
 # generate variants
-variants = VariantGenerator.generate_basic_variants(baumuster)
-print(len(variants), type(variants))
+variants = VariantGenerator.generate_variants(baumuster)
+final_list = []
+for variant in variants:
+    final_list.append(variant)
 
-# j = json.dumps(for variant.codes in variants)
+Utils.print_list_info('Variants', final_list)
+# j = json.dumps(variants)
 # with open('output.json', 'w') as file:
 #      file.write(j)
 

@@ -1,6 +1,3 @@
-from Models import Optional
-
-
 class Code:
 
     def __init__(self, code_id, optional, flag, rule):
