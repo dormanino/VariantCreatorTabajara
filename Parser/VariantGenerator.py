@@ -3,6 +3,7 @@ from Data.DataProvider import DataProvider
 from Helper.Utils import Utils
 from Models.Variant import Variant
 from Parser.CodeRuleParser import CodeRuleParser
+import itertools
 
 
 class VariantGenerator:
@@ -68,7 +69,7 @@ class VariantGenerator:
         return inconsistent_codes, basic_code_groups, extra_code_groups
 
     @staticmethod
-    def generate_basic_combinations(code_groups):
+    def basic_combinations_generator(code_groups):
         _code_groups = code_groups.copy()
 
         fixed_codes = []
@@ -90,7 +91,7 @@ class VariantGenerator:
         return combinations
 
     @staticmethod
-    def generate_extra_combinations(code_groups):
+    def extra_suffixes_generator(code_groups):
         for group in code_groups:
             for code in group:
                 yield [code]
@@ -109,13 +110,16 @@ class VariantGenerator:
         #     combinations.extend(new_combinations)
 
     @staticmethod
-    def generate_all_combinations(basic_combinations, extra_combinations):
-        for basic_combination in basic_combinations:
-            yield basic_combination
-            for extra_combination in extra_combinations:
-                new_combination = basic_combination.copy()
-                new_combination.extend(extra_combination)
-                yield new_combination
+    def extra_combinations_generator(basic_combination, extra_code_groups):
+        for extra_suffix in VariantGenerator.extra_suffixes_generator(extra_code_groups):
+            extra_combination = basic_combination.copy()
+            extra_combination.extend(extra_suffix)
+            yield extra_combination
+
+    @staticmethod
+    def remove_prefix(codes):
+        for code in codes:
+            yield code.id[2:]
 
     @staticmethod
     def validate(combination, baumuster):
@@ -123,37 +127,33 @@ class VariantGenerator:
         if not combination:
             return False
 
-        noprefix_codes = []
-        for code in combination:
-            noprefix_codes.append(code.id[2:])
-
+        noprefix_codes = list(VariantGenerator.remove_prefix(combination))
         for code in combination:
             baumuster_code = baumuster.find_code(code.id)
             if baumuster_code is None:
                 return False  # check if code is in baumuster
-
-            if not CodeRuleParser.validate(baumuster_code.rule, noprefix_codes):
+            elif not CodeRuleParser.validate(baumuster_code.rule, noprefix_codes):
                 return False  # validate code rules against baumuster
 
         return True
 
     @staticmethod
-    def generate_variants(baumuster):
+    def variant_description(baumuster, basic_index, extra_index):
+        return baumuster.id + '-' + str(basic_index) + '-' + str(extra_index)
 
+    @staticmethod
+    def variants_generator(baumuster):
         codes_analysis = VariantGenerator.codes_analysis(baumuster)
         basic_code_groups = codes_analysis[1]
         extra_code_groups = codes_analysis[2]
-        basic_combinations = VariantGenerator.generate_basic_combinations(basic_code_groups)
-        extra_combinations = VariantGenerator.generate_extra_combinations(extra_code_groups)
-        combinations = VariantGenerator.generate_all_combinations(basic_combinations, extra_combinations)
 
-        # Utils.print_list_info('Basic Combinations', basic_combinations)
-        # Utils.print_list_info('Extra Combinations', extra_combinations)
-        # Utils.print_list_info('All Combinations', combinations)
-
-        # filter valid variants
-        variant_index = 0
-        for combination in combinations:
-            if VariantGenerator.validate(combination, baumuster):
-                variant_index += 1
-                yield Variant(variant_index, combination)
+        basic_index = 0
+        for basic_combination in VariantGenerator.basic_combinations_generator(basic_code_groups):
+            extra_index = 0
+            if VariantGenerator.validate(basic_combination, baumuster):
+                basic_index += 1
+                yield Variant(VariantGenerator.variant_description(baumuster, basic_index, extra_index), basic_combination)
+                for extra_combination in VariantGenerator.extra_combinations_generator(basic_combination, extra_code_groups):
+                    if VariantGenerator.validate(extra_combination, baumuster):
+                        extra_index += 1
+                        yield Variant(VariantGenerator.variant_description(baumuster, basic_index, extra_index), extra_combination)

@@ -12,9 +12,10 @@ data_provider = DataProvider()
 baumuster = data_provider.load_baumuster('C958174')
 
 # generate variants
-variants = VariantGenerator.generate_variants(baumuster)
+variants = VariantGenerator.variants_generator(baumuster)
 final_list = []
 for variant in variants:
+    print(variant.id)
     final_list.append(variant)
 
 Utils.print_list_info('Variants', final_list)

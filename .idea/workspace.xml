@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8856f15-8f2d-4040-9765-97de79dd17a4" name="Default" comment="Inluded Project">
-      <change afterPath="$PROJECT_DIR$/Helper/Utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/DataProvider.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DataProvider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/Run.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/Run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Baumuster.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Baumuster.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Code.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Code.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Optional.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Optional.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Optionals.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Optionals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Variant.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Variant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DataPoint.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DataPoint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main/Run.py" beforeDir="false" afterPath="$PROJECT_DIR$/Run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/output.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Parser/VariantGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/VariantGenerator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_basic_variant.json" beforeDir="false" afterPath="$PROJECT_DIR$/sample_basic_variant.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_baumuster.json" beforeDir="false" afterPath="$PROJECT_DIR$/sample_baumuster.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,10 +21,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Run.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Main/Run.py">
+        <entry file="file://$PROJECT_DIR$/Run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+            <state relative-caret-position="506">
+              <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -42,8 +35,8 @@
       <file leaf-file-name="Baumuster.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Models/Baumuster.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="46">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -60,8 +53,8 @@
       <file leaf-file-name="DataProvider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data/DataProvider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+            <state relative-caret-position="430">
+              <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -69,11 +62,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="DataPoint.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data/DataPoint.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CodeRuleParser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Parser/CodeRuleParser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            <state relative-caret-position="713">
+              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -81,10 +83,12 @@
       <file leaf-file-name="VariantGenerator.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Parser/VariantGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1219">
-              <caret line="134" column="12" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
+            <state relative-caret-position="486">
+              <caret line="114" column="56" lean-forward="true" selection-start-line="114" selection-start-column="56" selection-end-line="114" selection-end-column="56" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#263#370#0" />
+                <element signature="e#4105#4624#0" />
               </folding>
             </state>
           </provider>
@@ -102,17 +106,8 @@
       <file leaf-file-name="pydevd.py" pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
+            <state relative-caret-position="38249">
               <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="acc_list.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/acc_list.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6605">
-              <caret column="240684" selection-start-column="240684" selection-end-column="240684" />
             </state>
           </provider>
         </entry>
@@ -121,7 +116,7 @@
         <entry file="file://$PROJECT_DIR$/sample_basic_variant.json">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -187,7 +182,6 @@
         <option value="$PROJECT_DIR$/Parser/CodeRuleParser.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py" />
         <option value="$PROJECT_DIR$/Models/Code.py" />
-        <option value="$PROJECT_DIR$/Data/DataPoint.py" />
         <option value="$PROJECT_DIR$/Models/Optionals.py" />
         <option value="$PROJECT_DIR$/Models/Variant.py" />
         <option value="$PROJECT_DIR$/sample_basic_variant.json" />
@@ -197,6 +191,8 @@
         <option value="$PROJECT_DIR$/Models/Baumuster.py" />
         <option value="$PROJECT_DIR$/Data/DataProvider.py" />
         <option value="$PROJECT_DIR$/Main/Run.py" />
+        <option value="$PROJECT_DIR$/Data/DataPoint.py" />
+        <option value="$PROJECT_DIR$/Run.py" />
         <option value="$PROJECT_DIR$/Parser/VariantGenerator.py" />
       </list>
     </option>
@@ -212,7 +208,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -233,11 +228,6 @@
             <path>
               <item name="VariantCreatorTabajara" type="b2602c69:ProjectViewProjectNode" />
               <item name="VariantCreatorTabajara" type="462c0819:PsiDirectoryNode" />
-              <item name="Main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VariantCreatorTabajara" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VariantCreatorTabajara" type="462c0819:PsiDirectoryNode" />
               <item name="Models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -245,19 +235,11 @@
               <item name="VariantCreatorTabajara" type="462c0819:PsiDirectoryNode" />
               <item name="Parser" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="VariantCreatorTabajara" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-            <path>
-              <item name="VariantCreatorTabajara" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -266,15 +248,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SubarFernanOlivera\PycharmProjects\VariantCreatorTabajara\Data" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vravagn\PycharmProjects\VariantCreatorTabajara" />
       <recent name="C:\Users\SubarFernanOlivera\PycharmProjects\VariantCreatorTabajara\Samples" />
       <recent name="C:\Users\SubarFernanOlivera\PycharmProjects\VariantCreatorTabajara\Main" />
       <recent name="C:\Users\SubarFernanOlivera\PycharmProjects\VariantCreatorTabajara" />
       <recent name="C:\Users\SubarFernanOlivera\PycharmProjects\VariantCreatorTabajara\Parser" />
-      <recent name="C:\Users\vravagn\PycharmProjects\VariantCreatorTabajara" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\SubarFernanOlivera\PycharmProjects\VariantCreatorTabajara\Data" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -289,7 +271,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Run (1)">
+  <component name="RunManager" selected="Python.Run">
     <configuration name="CombinationsScratch" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="VariantCreatorTabajara" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -308,24 +290,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Example" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="VariantCreatorTabajara" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Samples" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Samples/Example.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="Run (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="VariantCreatorTabajara" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -338,7 +302,25 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main/Run.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\vravagn\PycharmProjects\VariantCreatorTabajara\Run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Run" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="VariantCreatorTabajara" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -381,19 +363,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.Example" />
       <item itemvalue="Python.CombinationsScratch" />
       <item itemvalue="Python.Run (1)" />
       <item itemvalue="Python.scratch_1" />
       <item itemvalue="Python.VariantGenerator" />
+      <item itemvalue="Python.Run" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Run" />
         <item itemvalue="Python.Run (1)" />
         <item itemvalue="Python.VariantGenerator" />
         <item itemvalue="Python.scratch_1" />
         <item itemvalue="Python.CombinationsScratch" />
-        <item itemvalue="Python.Example" />
       </list>
     </recent_temporary>
   </component>
@@ -429,26 +411,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49280575" visible="true" weight="0.17324094" />
       <window_info anchor="bottom" id="TODO" order="5" sideWeight="0.4978678" weight="0.32934782" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5026652" side_tool="true" weight="0.33115467" />
-      <window_info anchor="bottom" x="67" y="563" width="1920" height="337" id="Run" order="2" visible="true" weight="0.10130719" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32752994" />
+      <window_info active="true" anchor="bottom" x="67" y="563" width="1920" height="337" id="Run" order="2" visible="true" weight="0.2937976" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49733475" weight="0.32897604" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32717392" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3278867" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49280575" visible="true" weight="0.15138593" />
-      <window_info anchor="right" id="R Packages" order="3" />
-      <window_info anchor="right" id="R Graphics" order="4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3278867" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="right" id="Debug" order="5" visible="true" weight="0.40938166" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3278867" />
+      <window_info anchor="right" id="Debug" order="5" weight="0.27345416" />
       <window_info id="Favorites" order="2" sideWeight="0.5071942" side_tool="true" weight="0.081023455" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="4" />
+      <window_info anchor="right" id="R Packages" order="3" />
       <window_info anchor="bottom" id="Messages" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
     </layout>
   </component>
@@ -487,7 +470,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="80" />
+      <option name="time" value="108" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -500,6 +483,18 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Parser/VariantGenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2323">
+          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#263#370#0" />
+            <element signature="e#4105#4624#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Models/Code.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -547,9 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding>
-            <marker date="1523649113080" expanded="true" signature="15:148" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -600,9 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding>
-            <marker date="1523649113080" expanded="true" signature="15:148" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -632,27 +621,9 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_5.py" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_7.py" />
     <entry file="file://$PROJECT_DIR$/output.json" />
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="295" selection-start-line="295" selection-end-line="295" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="266" selection-start-line="266" selection-end-line="266" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/_bootlocale.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/json/__init__.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/codecs.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/_bootlocale.py" />
     <entry file="file://$PROJECT_DIR$/Samples/CombinationsScratch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1702">
@@ -667,14 +638,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/DataPoint.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main/output.json">
+    <entry file="file://$PROJECT_DIR$/output.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="2" selection-start-column="2" selection-end-column="2" />
@@ -686,22 +650,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/json_none_test.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/json_none_test.json" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -724,13 +679,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/-1794586906/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="3601" column="8" selection-start-line="3601" selection-start-column="8" selection-end-line="3601" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/-1794586906/builtins.py" />
     <entry file="file://$PROJECT_DIR$/Models/Code.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -742,9 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <marker date="1523649113080" expanded="true" signature="15:148" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -757,15 +703,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/acc_list.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6605">
+        <state relative-caret-position="5520">
           <caret column="240684" selection-start-column="240684" selection-end-column="240684" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample_basic_variant.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -778,25 +717,8 @@
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
+        <state relative-caret-position="38249">
           <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/DataProvider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parser/CodeRuleParser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -807,17 +729,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Models/Baumuster.py">
+    <entry file="file://$PROJECT_DIR$/Parser/CodeRuleParser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="713">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main/Run.py">
+    <entry file="file://$PROJECT_DIR$/Data/DataProvider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+        <state relative-caret-position="430">
+          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/Baumuster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/DataPoint.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample_basic_variant.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -826,10 +779,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Parser/VariantGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1219">
-          <caret line="134" column="12" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
+        <state relative-caret-position="486">
+          <caret line="114" column="56" lean-forward="true" selection-start-line="114" selection-start-column="56" selection-end-line="114" selection-end-column="56" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#263#370#0" />
+            <element signature="e#4105#4624#0" />
           </folding>
         </state>
       </provider>
